@@ -1,0 +1,80 @@
+﻿@model Product_Inventory0406.ViewMode.PdiTableViewModel
+
+@{
+    ViewBag.Title = "產品資料表";
+}
+
+
+
+<h2>產品資料表</h2>
+<p>
+    @Html.ActionLink("新增產品資料", "Create")
+</p>
+
+
+<table class="table">
+    @* 如果資料庫中的資料表不是0個，則顯示資料，且列出新增、刪除與修改連結 *@
+    @if (!Model.DataList.Count.Equals(0))
+    {
+        <tr>
+            <th>產品編號</th>
+            <th>產品名稱</th>
+            <th>產品種類</th>
+            <th>RFID種類</th>
+            <th>安全庫存量</th>
+            <th>新增日期</th>
+            <th></th>
+        </tr>
+
+        foreach (var item in Model.DataList)
+        {
+
+            <tr>
+                <td>@item.ProductKey</td>
+                <td>@item.ProductName</td>
+                <td><img src="~/ImageCategory/@item.Product_Category" width="32" /></td>
+                <td>@item.RFID_Category</td>
+                <td>@item.SafeAmount</td>
+                <td>@DateTime.Parse(item.InsertDate.ToString()).ToLongDateString()</td>
+
+                <td>
+                    @Html.ActionLink("刪除資料", "Delete", new { ProductKey = item.ProductKey})
+                    @Html.ActionLink("修改資料", "Edit", new { ProductKey = item.ProductKey })
+                </td>
+            </tr>
+        }
+    }
+    else
+    {
+        <tr>
+            <td colspan="4">資料庫內無任何資料</td>
+        </tr>
+    }
+
+
+</table>
+
+@*@using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-horizontal">
+            <h4>PdiTableViewModel</h4>
+            <hr />
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Create" class="btn btn-default" />
+                </div>
+            </div>
+        </div>
+    }*@
+
+
+<div>
+    @Html.ActionLink("回首頁", "Index")
+</div>
+
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>

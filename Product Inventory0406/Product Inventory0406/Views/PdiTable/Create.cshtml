@@ -1,0 +1,83 @@
+﻿@model Product_Inventory0406.Models.pdi_table
+
+
+@{
+    ViewBag.Title = "新增產品資料";
+}
+
+@using (Html.BeginForm())
+{
+    <h3>新增產品資料</h3>
+
+    <table>
+        @* 產品編號 *@
+        <tr>
+            <td>@Html.LabelFor(model => model.ProductKey)</td>
+            <td>
+                @Html.TextBoxFor(model => model.ProductKey)
+                @Html.ValidationMessageFor(model => model.ProductKey)
+            </td>
+        </tr>
+
+        @* 產品名稱 *@
+        <tr>
+            <td>@Html.LabelFor(model => model.ProductName)</td>
+            <td>
+                @Html.TextBoxFor(model => model.ProductName)
+                @Html.ValidationMessageFor(model => model.ProductName)
+            </td>
+        </tr>
+
+        @* 產品種類 *@
+        <tr>
+            <td>@Html.LabelFor(model => model.Product_Category)</td>
+            <td>
+                <select id="Product_Category" name="Product_Category" class="form-control">
+                    <option value="rfid.png">RFID</option>
+                    <option value="tag.png">Tag</option>
+                </select>
+            </td>
+        </tr>
+
+        @* RFID規格 *@
+        <tr>
+            <td>@Html.LabelFor(model => model.RFID_Category)</td>
+            <td>
+                <select id="RFID_Category" name="RFID_Category" class="form-control">
+                    <option value="HF">HF</option>
+                    <option value="UHF">UHF</option>
+                </select>
+            </td>
+        </tr>
+
+        @* 基本數量 *@
+        <tr>
+            <td>@Html.LabelFor(model => model.SafeAmount)</td>
+            <td>
+                @Html.TextBoxFor(model => model.SafeAmount)
+            </td>
+        </tr>
+
+        @* 新增日期 *@
+        <tr>
+            <td>@Html.LabelFor(model => model.InsertDate)</td>
+            <td>
+                @Html.EditorFor(model => model.InsertDate, new { htmlAttributes = new { @class = "form-control", type = "date", required = "required" } })
+            </td>
+        </tr>
+
+    </table>
+
+    <input type="submit" value="新增資料" class="btn btn-default" />
+
+}
+
+
+<div>
+    @Html.ActionLink("返回清單", "Index")
+</div>
+
+
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>

@@ -1,0 +1,102 @@
+﻿@model Product_Inventory0406.Models.pdi_table
+
+@{
+    ViewBag.Title = "修改產品資料";
+}
+
+ <h2>修改產品資料</h2>
+
+@using (Html.BeginForm())
+{
+
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <hr />
+        @*@Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.ProductKey, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.ProductKey, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.ProductKey, "", new { @class = "text-danger" })
+            </div>
+        </div>*@
+
+        @Html.ValidationSummary(true,"", new { @class = "text-danger" })
+        @Html.HiddenFor(model=>model.ProductKey)
+
+
+        <div class="form-group">
+            @*@Html.LabelFor(model => model.ProductName, htmlAttributes: new { @class = "control-label col-md-2" })*@
+            <label class="control-label col-md-2">產品名稱</label>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.ProductName, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.ProductName, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @*@Html.LabelFor(model => model.Product_Category, htmlAttributes: new { @class = "control-label col-md-2" })*@
+            <label class="control-label col-md-2">產品種類</label>
+            <div class="col-md-10">
+                @*    @Html.EditorFor(model => model.Product_Category, new { htmlAttributes = new { @class = "form-control" } })*@
+                @*    @Html.ValidationMessageFor(model => model.Product_Category, "", new { @class = "text-danger" })*@
+                <select id="Product_Category" name="Product_Category" class="form-control">
+                    <option value="rfid.png" @(Model.Product_Category=="rfid.png"? "selected":"")>RFID</option>
+                    <option value="tag.png" @(Model.Product_Category=="tag.png"? "selected":"")>Tag</option>
+                </select>
+
+
+            </div>
+        </div>
+
+        <div class="form-group">
+            @*@Html.LabelFor(model => model.RFID_Category, htmlAttributes: new { @class = "control-label col-md-2" })*@
+            <label class="control-label col-md-2">RFID規格</label>
+            
+            <div class="col-md-10">
+                @* @Html.EditorFor(model => model.RFID_Category, new { htmlAttributes = new { @class = "form-control" } })*@
+                @* @Html.ValidationMessageFor(model => model.RFID_Category, "", new { @class = "text-danger" })*@
+                <select id="RFID_Category" name="RFID_Category" class="form-control">
+                    <option value="HF" @(Model.Product_Category == "HF" ? "selected" : "")>RFID</option>
+                    <option value="UHF" @(Model.Product_Category == "UHF" ? "selected" : "")>Tag</option>
+                </select>
+
+            </div>
+        </div>
+
+        <div class="form-group">
+           @* @Html.LabelFor(model => model.SafeAmount, htmlAttributes: new { @class = "control-label col-md-2" })*@
+            <label class="control-label col-md-2">安全庫存量</label>
+            
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.SafeAmount, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.SafeAmount, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @*@Html.LabelFor(model => model.InsertDate, htmlAttributes: new { @class = "control-label col-md-2" })*@
+            <label class="control-label col-md-2">新增日期</label>
+
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.InsertDate, new { htmlAttributes = new { @class = "form-control", type = "date", required = "required" } })
+                @Html.ValidationMessageFor(model => model.InsertDate, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="儲存" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("返回清單", "Index")
+</div>
+
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>

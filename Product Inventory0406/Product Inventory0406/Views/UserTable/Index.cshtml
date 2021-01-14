@@ -1,0 +1,62 @@
+﻿@model Product_Inventory0406.ViewMode.UserTableViewModel
+
+@{
+    ViewBag.Title = "系統使用者資料表";
+}
+
+<h2>Index</h2>
+
+
+@*@using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-horizontal">
+            <h4>UserTableViewModel</h4>
+            <hr />
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Create" class="btn btn-default" />
+                </div>
+            </div>
+        </div>
+    }*@
+
+<table class="table">
+    @* 如果資料庫中的成員資料表不是0個，則顯示資料，且列出新增、刪除與修改連結 *@
+    @if (!Model.DataList.Count.Equals(0))
+    {
+
+        <tr>
+            <th>使用者帳號</th>
+            <th>使用者密碼</th>
+            <th>使用者等級</th>
+        </tr>
+
+        foreach (var item in Model.DataList)
+        {
+            <tr>
+                <td>@item.UserID</td>
+                <td>@item.UserPwd</td>
+                <td>@item.UserRank</td>
+            </tr>
+
+        }
+    }
+    else
+    {
+        <tr>
+            <td colspan="4">資料庫內無任何資料</td>
+        </tr>
+    }
+
+</table>
+
+<div>
+    @Html.ActionLink("回首頁", "Index")
+</div>
+
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
