@@ -1,0 +1,30 @@
+﻿@model Product_Inventory0406.ViewMode.PdiTableViewModel
+
+@{
+    ViewBag.Title = "查詢單一產品資料";
+}
+
+<h2>查詢單一產品資料</h2>
+
+
+@using (Html.BeginForm("Index", "PdiTable", FormMethod.Get))
+{
+    @*建立登入畫面用的表格*@
+    <table>
+        <tr>
+            <td>
+                <p>請輸入產品編號</p>
+            </td>
+            <td>
+                @Html.TextBoxFor(model => model.Search_Product)
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2">
+                <input type="submit" value="查詢" />
+            </td>
+        </tr>
+    </table>
+}
+

@@ -138,17 +138,20 @@ namespace Product_Inventory0406.Services
         {
             pdi_table pdi_data = new pdi_table();
             //sql語法
-            var sql_search = $@"select * from pdi_table where ProductKey={DataKey}";
-            //
+            // where ProductKey=@ProductKey
+            var sql_search = $@"select * from pdi_table where  where ProductKey=@ProductKey";
+            
 
             //確保程式不會因為執行錯誤而中斷
-            try 
+            try
             {
                 //開啟資料庫
                 pdi04_conn.Open();
 
                 //執行SQL指令
                 SqlCommand sqlcmd_select_pdidata = new SqlCommand(sql_search, pdi04_conn);
+                // update_cmd.Parameters.AddWithValue("@ProductKey", update_data.ProductKey);
+                sqlcmd_select_pdidata.Parameters.AddWithValue("@ProductKey",DataKey);
 
                 //取得SQL資料
                 SqlDataReader sqldr_pditable = sqlcmd_select_pdidata.ExecuteReader();

@@ -67,7 +67,8 @@ namespace Product_Inventory0406.Services
         #endregion
 
 
-        #region  新增使用者(註冊)
+        #region  新增使用者
+        //類似註冊，不過此功能只能由最高權限者幫忙新增使用者
         //使用Linq的方式
         public void InsertNewUser(pdi_user new_data) 
         {
@@ -79,7 +80,7 @@ namespace Product_Inventory0406.Services
 
         #region 查詢一筆使用者資料
         //可透過此方法來進行"登入確認"
-        private pdi_user GetDataByAccount(string Account) 
+        private pdi_user GetDataByAccount(string Account,string Password) 
         {
             pdi_user user_data = new pdi_user();
             //SQL語法
@@ -90,16 +91,21 @@ namespace Product_Inventory0406.Services
             {
                 //執行Sql指令
                 SqlCommand cmd = new SqlCommand(sql, pdi04_conn);
-
                 //隱藏碼攻擊問題。
-                cmd.Parameters.AddWithValue("@UserID", user_data.UserID);
-                cmd.Parameters.AddWithValue("@UserPwd", user_data.UserPwd);
-                cmd.Parameters.AddWithValue("@UserPwd", user_data.UserRank);
+                cmd.Parameters.AddWithValue("@UserID", Account);
+                cmd.Parameters.AddWithValue("@UserPwd", Password);
+                //cmd.Parameters.AddWithValue("@UserPwd", user_data_rank.UserRank);
 
                 //開啟資料庫連線
                 pdi04_conn.Open();
                 //執行SQL，取得Sql資料
                 SqlDataReader dr = cmd.ExecuteReader();
+                //回傳登入者的資料
+                dr.Read();
+                user_data.UserID = dr["UserID"].ToString();
+                user_data.UserPwd = dr["UserPwd"].ToString();
+                user_data.UserRank = Convert.ToInt32(dr["UserRank"]);
+
             }
             catch (Exception e)
             {
@@ -117,24 +123,32 @@ namespace Product_Inventory0406.Services
 
         #endregion
 
-
-
         #region 登入確認
         //登入帳密確認方法，並回傳驗證後訊息
-        public string LoginCheck(string Account, string Password)
+        public string LoginCheck(string UserID, string UserPwd)
         {
             //取得傳入帳號的會員資料
-            pdi_user LoginMember = GetDataByAccount(Account);
+            pdi_user LoginMember = GetDataByAccount(UserID, UserPwd);
+
+            int user_role = LoginMember.UserRank;
 
             if (LoginMember !=null) 
             {
-                
+                //先確認帳號與密碼
+                if (LoginMember.UserID != null && LoginMember.UserPwd != null)
+                {
+                    //要能回傳兩個訊息
+                    return "";
+                }
+                else
+                {
+                    return "無此會員帳號，或是密碼錯誤! 請重新確認";
+                }
             }
             else 
             {
-                return "無此會員帳號，請去註冊";
+                return "無此會員帳號!";
             }
-
             ////判斷是否有此會員
             //if (LoginMember != null)
             //{
@@ -155,35 +169,58 @@ namespace Product_Inventory0406.Services
         }
         #endregion
 
-        #region 取得角色
+        #region 查詢會員等級
         //取得會員的權限角色資料
         public string GetRole(string Account)
         {
+            int user_data_rank;
 
-            ////宣告初始角色字串
-            //string Role = "User";
-            ////取得傳入帳號的會員資料
-            //pdi_user LoginMember = GetDataByAccount(Account);
-            ////判斷資料庫欄位，用以確認是否為Admon
-            //if (LoginMember.UserPwd.ToString())
-            //{
-            //    Role += ",Admin"; //添加Admin
-            //}
-            ////回傳最後結果
-            //return Role;
+            //SQL語法 select pdi_user.UserRank from pdi_user where UserID='名稱'
+            string sql_rank = $@" select UserRank from pdi_user where UserID=@UserID";
+
+            //設定例外，確保程式不會因執行錯誤而整個中斷
+            try
+            {
+                //執行Sql指令
+                SqlCommand cmd = new SqlCommand(sql_rank, pdi04_conn);
+                //隱藏碼攻擊問題。
+                cmd.Parameters.AddWithValue("@UserID", Account);
+                //cmd.Parameters.AddWithValue("@UserPwd", user_data_rank.UserRank);
+
+                //開啟資料庫連線
+                pdi04_conn.Open();
+                //執行SQL，取得Sql資料
+                SqlDataReader dr = cmd.ExecuteReader();
+                //回傳登入者的資料
+                dr.Read();
+                user_data_rank = Convert.ToInt32(dr["UserRank"]);
+
+            }
+            catch (Exception ex) 
+            {
+                //查無資料
+                //丟出錯誤
+                user_data_rank = 0;
+            }
+            finally
+            {
+                pdi04_conn.Close();
+            }
+
+            return user_data_rank.ToString();
         }
         #endregion
 
 
         #region 密碼確認
-        //進行密碼確認方法
-        public bool PasswordCheck(pdi_user CheckMember, string Password)
-        {
-            //判斷資料庫裡的密碼資料與傳入密碼資料Hash後是否一樣
-            bool result = CheckMember.UserPwd.Equals(HashPassword(Password));
-            //回傳結果
-            return result;
-        }
+        ////進行密碼確認方法
+        //public bool PasswordCheck(pdi_user CheckMember, string Password)
+        //{
+        //    //判斷資料庫裡的密碼資料與傳入密碼資料Hash後是否一樣
+        //    bool result = CheckMember.UserPwd.Equals(HashPassword(Password));
+        //    //回傳結果
+        //    return result;
+        //}
         #endregion
 
 

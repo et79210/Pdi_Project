@@ -1,0 +1,79 @@
+﻿@model Product_Inventory0406.ViewMode.UserLoginViewModel
+
+@* 此頁面使用強型別 *@
+@{
+    ViewBag.Title = "登入畫面";
+}
+
+<h2>登入畫面</h2>
+
+@using (Html.BeginForm())
+{
+    @*建立登入畫面用的表格*@
+    <table>
+        <tr>
+            <td>@Html.LabelFor(model => model.UserID)</td>
+            <td>
+                @Html.TextBoxFor(model => model.UserID)
+                @Html.ValidationMessageFor(model => model.UserID)
+            </td>
+        </tr>
+
+        <tr>
+            <td>@Html.LabelFor(model => model.UserPwd)</td>
+            <td>
+                @Html.PasswordFor(model => model.UserPwd)
+                @Html.ValidationMessageFor(model => model.UserPwd)
+            </td>
+        </tr>
+
+        @*  錯誤的話，訊息怎麼說
+            <tr>
+            <td colspan="2">
+                @Html.ValidationSummary()
+            </td>
+        </tr>*@
+
+        <tr>
+            <td colspan="2">
+                <input type="submit"  value="登入"/>
+            </td>
+        </tr>
+
+
+    </table>
+
+
+    @*@Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <h4>UserLoginViewModel</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.UserID, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.UserID, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.UserID, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.UserPwd, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.UserPwd, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.UserPwd, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+    </div>*@
+}
+
+@*<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>*@

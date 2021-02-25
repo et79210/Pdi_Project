@@ -23,11 +23,13 @@ namespace Product_Inventory0406.Controllers
         {
             //宣告一個新的頁面模型
             PdiTableViewModel pdiviewmodel = new PdiTableViewModel();
+
             //從Serivce中取得所有頁面所需要的陣列資料，然後放入到ViewModel中
             pdiviewmodel.DataList = pditabele_service.GetPdi_Tables();
 
-            //若Session["Member"]為空，表示會員未登入
-            if (Session["Member"] == null) 
+
+            //若Session["UserID"]為空，表示會員未登入
+            if (Session["Member"] == null)
             {
                 return View("Index", "_Layout", pdiviewmodel);
             }
@@ -36,14 +38,51 @@ namespace Product_Inventory0406.Controllers
         }
         //產品資料表頁---------------------------------------------------------------------------
 
+        //查詢單一產品資料------------------------------------------------------------------------------------------------------
+        #region 查詢單一產品資料
+        public ActionResult SelectProduct(string Select_Key)
+        {
+            //要先根據編號來載入資料
+            pdi_table pdi_data = pditabele_service.GetDataByKey(Select_Key);
+
+            
+
+            //將資料傳入View中
+            return View(pdi_data);
+        }
+
+        //[HttpPost]
+        //public ActionResult SelectProduct(string Select_Key) 
+        //{
+        //    //宣告一個新的頁面模型
+        //    PdiTableViewModel pdiviewmodel = new PdiTableViewModel();
+        //    //要先根據編號來載入資料
+        //    pdi_table pdi_data = pditabele_service.GetDataByKey(Select_Key);
+
+        //    //重新導向
+        //    return View(pdi_data);
+
+        //}
+
+        #endregion
+        //查詢單一產品資料------------------------------------------------------------------------------------------------------
+
+
         #region 新增產品資料
         //新增產品資料---------------------------------------------------------------------------
         //使用多載方式建立於新增中兩個同名Action方法，一個用於一開始頁面顯示，
         //另一個用於接受傳入的資料，並將資料寫入資料庫中。
         public ActionResult Create()
         {
-            //
-            return PartialView();
+            //若Session["UserID"]為空，表示會員未登入
+            if (Session["Member"] == null)
+            {
+                ViewBag.Message = "尚未登入";
+                //導入到登入畫面
+                return RedirectToAction("Login", "UserTable");
+            }
+            //會員登入狀態
+            return View("Create", "_LayoutMember");
         }
 
         [HttpPost]
@@ -105,11 +144,9 @@ namespace Product_Inventory0406.Controllers
             return RedirectToAction("Index");
 
         }
-
-
-
         //修改產品資料------------------------------------------------------------------------------------------------------
         #endregion
+
 
     }
 }

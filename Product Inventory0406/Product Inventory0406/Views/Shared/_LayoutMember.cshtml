@@ -26,7 +26,10 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("產品列表", "Index", "PdiTable")</li>
-                    <li>@Html.ActionLink("會員登入", "Logout", "UserTable")</li>
+                    <li>@Html.ActionLink("新增產品", "Create", "PdiTable")</li>
+                    <li>@Html.ActionLink("盤點列表", "Index", "InventoryTable")</li>
+                    <li>@Html.ActionLink("系統會員資料表", "Index", "UserTable")</li>
+                    <li>@Html.ActionLink("會員登出", "Logout", "UserTable")</li>
                     <li><a href="#">@Session["WelCome"]</a></li>
                 </ul>
             </div>

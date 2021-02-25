@@ -7,9 +7,9 @@
 
 
 <h2>產品資料表</h2>
-<p>
-    @Html.ActionLink("新增產品資料", "Create")
-</p>
+<div>
+    @Html.ActionLink("查詢單一產品資料", "SelectProduct", "PdiTable")
+</div>
 
 
 <table class="table">
@@ -23,6 +23,7 @@
             <th>RFID種類</th>
             <th>安全庫存量</th>
             <th>新增日期</th>
+            @* 需要多一行 *@
             <th></th>
         </tr>
 
@@ -37,10 +38,21 @@
                 <td>@item.SafeAmount</td>
                 <td>@DateTime.Parse(item.InsertDate.ToString()).ToLongDateString()</td>
 
-                <td>
-                    @Html.ActionLink("刪除資料", "Delete", new { ProductKey = item.ProductKey})
-                    @Html.ActionLink("修改資料", "Edit", new { ProductKey = item.ProductKey })
-                </td>
+
+                @if (Session["UserID"] == null)
+                {
+                    <td><p></p></td>
+                    <td><p></p></td>
+                }
+                else
+                {
+                    <td>
+                        @Html.ActionLink("刪除資料", "Delete", new { ProductKey = item.ProductKey })
+                        @Html.ActionLink("修改資料", "Edit", new { ProductKey = item.ProductKey })
+                    </td>
+
+                }
+
             </tr>
         }
     }
@@ -72,7 +84,7 @@
 
 
 <div>
-    @Html.ActionLink("回首頁", "Index")
+    @Html.ActionLink("產品列表", "Index", "PdiTable")
 </div>
 
 <script src="~/Scripts/jquery-3.4.1.min.js"></script>
