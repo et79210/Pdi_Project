@@ -12,11 +12,11 @@ namespace Product_Inventory0406.ViewMode
     //登入用ViewModel
     public class UserLoginViewModel
     {
-        [DisplayName("會員帳號")]
-        [Required(ErrorMessage = "請輸入會員帳號")]
+        [DisplayName("會員帳號：")]
+        [Required(ErrorMessage = "請輸入帳號資訊")]
         public string UserID { get; set; }
 
-        [DisplayName("會員密碼")]
+        [DisplayName("會員密碼：")]
         [Required(ErrorMessage = "請輸入密碼")]
         public string UserPwd { get; set; }
 

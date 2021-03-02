@@ -30,7 +30,7 @@
             @*@Html.LabelFor(model => model.ProductName, htmlAttributes: new { @class = "control-label col-md-2" })*@
             <label class="control-label col-md-2">產品名稱</label>
             <div class="col-md-10">
-                @Html.EditorFor(model => model.ProductName, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.EditorFor(model => model.ProductName, new { htmlAttributes = new { @class = "form-control", required = "required" } })
                 @Html.ValidationMessageFor(model => model.ProductName, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -70,7 +70,7 @@
             <label class="control-label col-md-2">安全庫存量</label>
             
             <div class="col-md-10">
-                @Html.EditorFor(model => model.SafeAmount, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.EditorFor(model => model.SafeAmount, new { htmlAttributes = new { @class = "form-control" , required = "required" } })
                 @Html.ValidationMessageFor(model => model.SafeAmount, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -94,7 +94,7 @@
 }
 
 <div>
-    @Html.ActionLink("返回清單", "Index")
+    @Html.ActionLink("返回產品列表", "Index", "PdiTable")
 </div>
 
 <script src="~/Scripts/jquery-3.4.1.min.js"></script>

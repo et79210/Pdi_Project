@@ -44,6 +44,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="PagedList, Version=1.17.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.1.17.0.0\lib\net40\PagedList.dll</HintPath>
+    </Reference>
+    <Reference Include="PagedList.Mvc, Version=4.5.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.Mvc.4.5.0.0\lib\net40\PagedList.Mvc.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -92,6 +98,7 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\PagedList.css" />
     <Content Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -105,6 +112,8 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="ImageCategory\rfid.png" />
     <Content Include="ImageCategory\tag.png" />
+    <Content Include="Scripts\additional-methods.js" />
+    <Content Include="Scripts\additional-methods.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
@@ -122,19 +131,24 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\InventoryTableController.cs" />
     <Compile Include="Controllers\PdiTableController.cs" />
+    <Compile Include="Controllers\ReportInquiryController.cs" />
     <Compile Include="Controllers\UserTableController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\pdi_inventory.cs" />
+    <Compile Include="Models\pdi_report.cs" />
     <Compile Include="Models\pdi_table.cs" />
     <Compile Include="Models\pdi_user.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\ForPaging.cs" />
     <Compile Include="Services\InventoryTableDBService.cs" />
     <Compile Include="Services\PdiTableDBService.cs" />
+    <Compile Include="Services\ReportTableDBService.cs" />
     <Compile Include="Services\UserTableDBService.cs" />
     <Compile Include="ViewMode\InvTableViewModel.cs" />
     <Compile Include="ViewMode\PdiTableViewModel.cs" />
+    <Compile Include="ViewMode\ReportTableViewModel.cs" />
     <Compile Include="ViewMode\UserLoginViewModel.cs" />
     <Compile Include="ViewMode\UserTableViewModel.cs" />
   </ItemGroup>
@@ -150,10 +164,11 @@
     <Content Include="Views\PdiTable\Create.cshtml" />
     <Content Include="Views\PdiTable\Edit.cshtml" />
     <Content Include="Views\Shared\_LayoutMember.cshtml" />
-    <Content Include="Views\UserTable\Login.cshtml" />
     <Content Include="Views\InventoryTable\Index.cshtml" />
     <Content Include="Views\InventoryTable\Create.cshtml" />
     <Content Include="Views\PdiTable\SelectProduct.cshtml" />
+    <Content Include="Views\ReportInquiry\Index.cshtml" />
+    <Content Include="Views\UserTable\Login.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

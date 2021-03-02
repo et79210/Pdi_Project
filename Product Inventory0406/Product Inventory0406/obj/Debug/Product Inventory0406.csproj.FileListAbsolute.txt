@@ -53,3 +53,7 @@ J:\Visual Studio Project\Product Inventory0406\Product Inventory0406\obj\Debug\P
 J:\Visual Studio Project\Product Inventory0406\Product Inventory0406\obj\Debug\Product Inventory0406.csproj.CopyComplete
 J:\Visual Studio Project\Product Inventory0406\Product Inventory0406\obj\Debug\Product Inventory0406.dll
 J:\Visual Studio Project\Product Inventory0406\Product Inventory0406\obj\Debug\Product Inventory0406.pdb
+J:\Visual Studio Project\Product Inventory0406\Product Inventory0406\bin\PagedList.dll
+J:\Visual Studio Project\Product Inventory0406\Product Inventory0406\bin\PagedList.Mvc.dll
+J:\Visual Studio Project\Product Inventory0406\Product Inventory0406\bin\PagedList.xml
+J:\Visual Studio Project\Product Inventory0406\Product Inventory0406\bin\PagedList.Mvc.xml

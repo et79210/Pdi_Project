@@ -25,7 +25,7 @@ namespace Product_Inventory0406.Services
             List<pdi_table> PdiDataList = new List<pdi_table>();
 
             //sql語法
-            var sql_select_pditable = @"select * from pdi_table";
+            var sql_select_pditable = @"select * from pdi_table ";
 
             //設定例外狀況
             try 
@@ -139,8 +139,7 @@ namespace Product_Inventory0406.Services
             pdi_table pdi_data = new pdi_table();
             //sql語法
             // where ProductKey=@ProductKey
-            var sql_search = $@"select * from pdi_table where  where ProductKey=@ProductKey";
-            
+            var sql_search = $@"select * from pdi_table where ProductKey=@ProductKey";
 
             //確保程式不會因為執行錯誤而中斷
             try
@@ -178,11 +177,66 @@ namespace Product_Inventory0406.Services
 
             //回傳根據編號所取得的資料
             return pdi_data;
+        }
+
+        #endregion
+
+
+        #region 搜尋單一產品資料
+
+        public List<pdi_table> Select_Pdi(string Product_Key) 
+        {
+
+            //宣告要回傳的搜尋資料為資料庫中的產品資料表
+            List<pdi_table> PdiDataList = new List<pdi_table>();
+
+            //sql語法
+            var sql_search_pdidata = $@"select * from pdi_table where ProductKey=@ProductKey";
+
+            //設定例外狀況
+            try
+            {
+                //開啟資料庫
+                pdi04_conn.Open();
+
+                //執行SQL指令
+                SqlCommand sqlcmd_select_pdidata = new SqlCommand(sql_search_pdidata, pdi04_conn);
+                //
+                sqlcmd_select_pdidata.Parameters.AddWithValue("@ProductKey", Product_Key);
+
+                //取得SQL資料
+                SqlDataReader sqldr_pditable = sqlcmd_select_pdidata.ExecuteReader();
+
+                while (sqldr_pditable.Read())
+                {
+                    pdi_table PdiData = new pdi_table();
+                    PdiData.ProductKey = sqldr_pditable["ProductKey"].ToString();
+                    PdiData.ProductName = sqldr_pditable["ProductName"].ToString();
+                    PdiData.Product_Category = sqldr_pditable["Product_Category"].ToString();
+                    PdiData.RFID_Category = sqldr_pditable["RFID_Category"].ToString();
+                    PdiData.SafeAmount = Convert.ToInt32(sqldr_pditable["SafeAmount"]);
+                    PdiData.InsertDate = Convert.ToDateTime(sqldr_pditable["InsertDate"]);
+
+                    PdiDataList.Add(PdiData);
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message.ToString());
+            }
+            finally
+            {
+                //關閉資料庫連線
+                pdi04_conn.Close();
+            }
+            //回傳資料庫中的產品資料表
+            return PdiDataList;
 
 
         }
 
         #endregion
+
 
 
         #region  修改產品資料

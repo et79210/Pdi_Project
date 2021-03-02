@@ -17,14 +17,14 @@
     @* 如果資料庫中的資料表不是0個，則顯示資料，且列出新增、刪除與修改連結 *@
     @if (!Model.DataList.Count.Equals(0))
     {
-    <tr>
-        <th>盤點編號</th>
-        <th>產品編號</th>
-        <th>盤點數量</th>
-        <th>盤點時間</th>
-        @* 需要多一行 *@
-        <th></th>
-    </tr>
+        <tr>
+            <th>盤點編號</th>
+            <th>產品編號</th>
+            <th>盤點數量</th>
+            <th>盤點時間</th>
+            @* 需要多一行 *@
+            <th></th>
+        </tr>
 
         foreach (var item in Model.DataList)
         {
@@ -32,13 +32,13 @@
             <tr>
                 <td>@item.Inv_number</td>
                 <td>@item.ProductKey</td>
-                @if(@item.SafeAmount > @item.NewProductNumber )
+                @if (@item.SafeAmount > @item.NewProductNumber)
                 {
-                 <td><span style="color:red">@item.NewProductNumber</span></td>
+                    <td><span style="color:red">@item.NewProductNumber</span></td>
                 }
-                else 
+                else
                 {
-                <td><span style="color:green">@item.NewProductNumber</span></td>
+                    <td><span style="color:green">@item.NewProductNumber</span></td>
                 }
 
                 <td>@DateTime.Parse(item.InventoryDate.ToString()).ToLongDateString()</td>
@@ -54,7 +54,7 @@
                 {
                     <td>
                         @Html.ActionLink("刪除資料", "Delete", new { Inv_number = item.Inv_number })
-                        @Html.ActionLink("修改資料", "Edit", new { Inv_number = item.Inv_number })
+                        @* @Html.ActionLink("修改資料", "Edit", new { Inv_number = item.Inv_number })*@
                     </td>
 
                 }
@@ -73,7 +73,7 @@
 </table>
 
 <div>
-    @Html.ActionLink("產品列表", "Index", "PdiTable")
+    @Html.ActionLink("返回產品列表", "Index", "PdiTable")
 </div>
 
 <script src="~/Scripts/jquery-3.4.1.min.js"></script>

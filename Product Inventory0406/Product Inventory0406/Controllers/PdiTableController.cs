@@ -7,6 +7,7 @@ using System.Web.Mvc;
 using Product_Inventory0406.Models;
 using Product_Inventory0406.Services;
 using Product_Inventory0406.ViewMode;
+using PagedList;
 
 namespace Product_Inventory0406.Controllers
 {
@@ -19,7 +20,7 @@ namespace Product_Inventory0406.Controllers
 
         //產品資料表頁---------------------------------------------------------------------------
         // GET: PdiTable
-        public ActionResult Index()
+        public ActionResult Index(int page = 1)
         {
             //宣告一個新的頁面模型
             PdiTableViewModel pdiviewmodel = new PdiTableViewModel();
@@ -40,29 +41,38 @@ namespace Product_Inventory0406.Controllers
 
         //查詢單一產品資料------------------------------------------------------------------------------------------------------
         #region 查詢單一產品資料
-        public ActionResult SelectProduct(string Select_Key)
+        public ActionResult SelectProduct()
         {
-            //要先根據編號來載入資料
-            pdi_table pdi_data = pditabele_service.GetDataByKey(Select_Key);
+            //宣告一個新的頁面模型
+            PdiTableViewModel pdiviewmodel = new PdiTableViewModel();
 
-            
+            //先告訴table表資料為空白
+            pdiviewmodel.DataList = null;
+
+            //若Session["UserID"]為空，表示會員未登入
+            if (Session["Member"] == null)
+            {
+                ViewBag.Message = "尚未登入";
+
+                //導入到登入畫面
+                return RedirectToAction("Login", "UserTable");
+            }
+            //將資料傳入View中
+            return View("SelectProduct", "_LayoutMember", pdiviewmodel);
+        }
+        [HttpPost]
+        public ActionResult SelectProduct(string Search_Product)
+        {
+            //宣告一個新的頁面模型
+            PdiTableViewModel pdiviewmodel = new PdiTableViewModel();
+
+            //要先根據編號來載入資料
+            pdiviewmodel.DataList = pditabele_service.Select_Pdi(Search_Product);
 
             //將資料傳入View中
-            return View(pdi_data);
+            return View("SelectProduct", "_LayoutMember", pdiviewmodel);
+
         }
-
-        //[HttpPost]
-        //public ActionResult SelectProduct(string Select_Key) 
-        //{
-        //    //宣告一個新的頁面模型
-        //    PdiTableViewModel pdiviewmodel = new PdiTableViewModel();
-        //    //要先根據編號來載入資料
-        //    pdi_table pdi_data = pditabele_service.GetDataByKey(Select_Key);
-
-        //    //重新導向
-        //    return View(pdi_data);
-
-        //}
 
         #endregion
         //查詢單一產品資料------------------------------------------------------------------------------------------------------
@@ -86,19 +96,19 @@ namespace Product_Inventory0406.Controllers
         }
 
         [HttpPost]
-        public ActionResult Create(string ProductKey, string ProductName, string Product_Category, string RFID_Category, int SafeAmount, DateTime InsertDate) 
+        public ActionResult Create(pdi_table pdi_table_data) 
         {
 
-            pdi_table pdidata = new pdi_table();
-            pdidata.ProductKey = ProductKey;
-            pdidata.ProductName = ProductName;
-            pdidata.Product_Category = Product_Category;
-            pdidata.RFID_Category = RFID_Category;
-            pdidata.SafeAmount = SafeAmount;
-            pdidata.InsertDate = InsertDate;
+            //pdi_table pdidata = new pdi_table();
+            //pdidata.ProductKey = ProductKey;
+            //pdidata.ProductName = ProductName;
+            //pdidata.Product_Category = Product_Category;
+            //pdidata.RFID_Category = RFID_Category;
+            //pdidata.SafeAmount = SafeAmount;
+            //pdidata.InsertDate = InsertDate;
 
             //使用Service來新增資料
-            pditabele_service.InsertProduct(pdidata);
+            pditabele_service.InsertProduct(pdi_table_data);
 
             return RedirectToAction("Index");
         }
@@ -129,7 +139,7 @@ namespace Product_Inventory0406.Controllers
             pdi_table pdi_data = pditabele_service.GetDataByKey(ProductKey);
 
             //將資料傳入View中
-            return View(pdi_data);
+            return View("Edit", "_LayoutMember",pdi_data);
         }
 
         [HttpPost] //使用Bind的Inculde來定義只接受的欄位，用來避免傳入其他不相干值
