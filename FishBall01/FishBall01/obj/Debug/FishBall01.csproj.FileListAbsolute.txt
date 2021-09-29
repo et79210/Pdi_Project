@@ -1,0 +1,126 @@
+D:\MyProject\Csharp\MVC Project\FishBall01\FishBall01\bin\FishBall01.dll.config
+D:\MyProject\Csharp\MVC Project\FishBall01\FishBall01\bin\FishBall01.dll
+D:\MyProject\Csharp\MVC Project\FishBall01\FishBall01\bin\FishBall01.pdb
+D:\MyProject\Csharp\MVC Project\FishBall01\FishBall01\bin\roslyn\csc.exe
+D:\MyProject\Csharp\MVC Project\FishBall01\FishBall01\bin\roslyn\csc.exe.config
+D:\MyProject\Csharp\MVC Project\FishBall01\FishBall01\bin\roslyn\csc.rsp
+D:\MyProject\Csharp\MVC Project\FishBall01\FishBall01\bin\roslyn\csi.exe
+D:\MyProject\Csharp\MVC Project\FishBall01\FishBall01\bin\roslyn\csi.rsp
+D:\MyProject\Csharp\MVC Project\FishBall01\FishBall01\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\MyProject\Csharp\MVC Project\FishBall01\FishBall01\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\MyProject\Csharp\MVC Project\FishBall01\FishBall01\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\MyProject\Csharp\MVC Project\FishBall01\FishBall01\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\MyProject\Csharp\MVC Project\FishBall01\FishBall01\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\MyProject\Csharp\MVC Project\FishBall01\FishBall01\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\MyProject\Csharp\MVC Project\FishBall01\FishBall01\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\MyProject\Csharp\MVC Project\FishBall01\FishBall01\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\MyProject\Csharp\MVC Project\FishBall01\FishBall01\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\MyProject\Csharp\MVC Project\FishBall01\FishBall01\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\MyProject\Csharp\MVC Project\FishBall01\FishBall01\bin\roslyn\System.AppContext.dll
+D:\MyProject\Csharp\MVC Project\FishBall01\FishBall01\bin\roslyn\System.Collections.Immutable.dll
+D:\MyProject\Csharp\MVC Project\FishBall01\FishBall01\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\MyProject\Csharp\MVC Project\FishBall01\FishBall01\bin\roslyn\System.IO.FileSystem.dll
+D:\MyProject\Csharp\MVC Project\FishBall01\FishBall01\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\MyProject\Csharp\MVC Project\FishBall01\FishBall01\bin\roslyn\System.Reflection.Metadata.dll
+D:\MyProject\Csharp\MVC Project\FishBall01\FishBall01\bin\roslyn\vbc.exe
+D:\MyProject\Csharp\MVC Project\FishBall01\FishBall01\bin\roslyn\vbc.exe.config
+D:\MyProject\Csharp\MVC Project\FishBall01\FishBall01\bin\roslyn\vbc.rsp
+D:\MyProject\Csharp\MVC Project\FishBall01\FishBall01\bin\roslyn\VBCSCompiler.exe
+D:\MyProject\Csharp\MVC Project\FishBall01\FishBall01\bin\roslyn\VBCSCompiler.exe.config
+D:\MyProject\Csharp\MVC Project\FishBall01\FishBall01\bin\Antlr3.Runtime.dll
+D:\MyProject\Csharp\MVC Project\FishBall01\FishBall01\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\MyProject\Csharp\MVC Project\FishBall01\FishBall01\bin\Microsoft.Web.Infrastructure.dll
+D:\MyProject\Csharp\MVC Project\FishBall01\FishBall01\bin\Newtonsoft.Json.dll
+D:\MyProject\Csharp\MVC Project\FishBall01\FishBall01\bin\System.Web.Helpers.dll
+D:\MyProject\Csharp\MVC Project\FishBall01\FishBall01\bin\System.Web.Mvc.dll
+D:\MyProject\Csharp\MVC Project\FishBall01\FishBall01\bin\System.Web.Optimization.dll
+D:\MyProject\Csharp\MVC Project\FishBall01\FishBall01\bin\System.Web.Razor.dll
+D:\MyProject\Csharp\MVC Project\FishBall01\FishBall01\bin\System.Web.WebPages.Deployment.dll
+D:\MyProject\Csharp\MVC Project\FishBall01\FishBall01\bin\System.Web.WebPages.dll
+D:\MyProject\Csharp\MVC Project\FishBall01\FishBall01\bin\System.Web.WebPages.Razor.dll
+D:\MyProject\Csharp\MVC Project\FishBall01\FishBall01\bin\WebGrease.dll
+D:\MyProject\Csharp\MVC Project\FishBall01\FishBall01\bin\System.Web.Helpers.xml
+D:\MyProject\Csharp\MVC Project\FishBall01\FishBall01\bin\System.Web.Mvc.xml
+D:\MyProject\Csharp\MVC Project\FishBall01\FishBall01\bin\System.Web.Optimization.xml
+D:\MyProject\Csharp\MVC Project\FishBall01\FishBall01\bin\System.Web.Razor.xml
+D:\MyProject\Csharp\MVC Project\FishBall01\FishBall01\bin\System.Web.WebPages.xml
+D:\MyProject\Csharp\MVC Project\FishBall01\FishBall01\bin\System.Web.WebPages.Deployment.xml
+D:\MyProject\Csharp\MVC Project\FishBall01\FishBall01\bin\System.Web.WebPages.Razor.xml
+D:\MyProject\Csharp\MVC Project\FishBall01\FishBall01\bin\Newtonsoft.Json.xml
+D:\MyProject\Csharp\MVC Project\FishBall01\FishBall01\bin\Antlr3.Runtime.pdb
+D:\MyProject\Csharp\MVC Project\FishBall01\FishBall01\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\MyProject\Csharp\MVC Project\FishBall01\FishBall01\bin\zh-Hant\System.Web.Helpers.resources.dll
+D:\MyProject\Csharp\MVC Project\FishBall01\FishBall01\bin\zh-Hant\System.Web.Mvc.resources.dll
+D:\MyProject\Csharp\MVC Project\FishBall01\FishBall01\bin\zh-Hant\System.Web.Optimization.resources.dll
+D:\MyProject\Csharp\MVC Project\FishBall01\FishBall01\bin\zh-Hant\System.Web.Razor.resources.dll
+D:\MyProject\Csharp\MVC Project\FishBall01\FishBall01\bin\zh-Hant\System.Web.WebPages.resources.dll
+D:\MyProject\Csharp\MVC Project\FishBall01\FishBall01\bin\zh-Hant\System.Web.WebPages.Deployment.resources.dll
+D:\MyProject\Csharp\MVC Project\FishBall01\FishBall01\bin\zh-Hant\System.Web.WebPages.Razor.resources.dll
+D:\MyProject\Csharp\MVC Project\FishBall01\FishBall01\obj\Debug\FishBall01.csprojAssemblyReference.cache
+D:\MyProject\Csharp\MVC Project\FishBall01\FishBall01\obj\Debug\FishBall01.csproj.CoreCompileInputs.cache
+D:\MyProject\Csharp\MVC Project\FishBall01\FishBall01\obj\Debug\FishBall01.csproj.CopyComplete
+D:\MyProject\Csharp\MVC Project\FishBall01\FishBall01\obj\Debug\FishBall01.dll
+D:\MyProject\Csharp\MVC Project\FishBall01\FishBall01\obj\Debug\FishBall01.pdb
+J:\Visual Studio Project\MVC Project\FishBall01\FishBall01\bin\FishBall01.dll.config
+J:\Visual Studio Project\MVC Project\FishBall01\FishBall01\bin\FishBall01.dll
+J:\Visual Studio Project\MVC Project\FishBall01\FishBall01\bin\FishBall01.pdb
+J:\Visual Studio Project\MVC Project\FishBall01\FishBall01\bin\roslyn\csc.exe
+J:\Visual Studio Project\MVC Project\FishBall01\FishBall01\bin\roslyn\csc.exe.config
+J:\Visual Studio Project\MVC Project\FishBall01\FishBall01\bin\roslyn\csc.rsp
+J:\Visual Studio Project\MVC Project\FishBall01\FishBall01\bin\roslyn\csi.exe
+J:\Visual Studio Project\MVC Project\FishBall01\FishBall01\bin\roslyn\csi.rsp
+J:\Visual Studio Project\MVC Project\FishBall01\FishBall01\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+J:\Visual Studio Project\MVC Project\FishBall01\FishBall01\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+J:\Visual Studio Project\MVC Project\FishBall01\FishBall01\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+J:\Visual Studio Project\MVC Project\FishBall01\FishBall01\bin\roslyn\Microsoft.CodeAnalysis.dll
+J:\Visual Studio Project\MVC Project\FishBall01\FishBall01\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+J:\Visual Studio Project\MVC Project\FishBall01\FishBall01\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+J:\Visual Studio Project\MVC Project\FishBall01\FishBall01\bin\roslyn\Microsoft.CSharp.Core.targets
+J:\Visual Studio Project\MVC Project\FishBall01\FishBall01\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+J:\Visual Studio Project\MVC Project\FishBall01\FishBall01\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+J:\Visual Studio Project\MVC Project\FishBall01\FishBall01\bin\roslyn\Microsoft.VisualBasic.Core.targets
+J:\Visual Studio Project\MVC Project\FishBall01\FishBall01\bin\roslyn\System.AppContext.dll
+J:\Visual Studio Project\MVC Project\FishBall01\FishBall01\bin\roslyn\System.Collections.Immutable.dll
+J:\Visual Studio Project\MVC Project\FishBall01\FishBall01\bin\roslyn\System.Diagnostics.StackTrace.dll
+J:\Visual Studio Project\MVC Project\FishBall01\FishBall01\bin\roslyn\System.IO.FileSystem.dll
+J:\Visual Studio Project\MVC Project\FishBall01\FishBall01\bin\roslyn\System.IO.FileSystem.Primitives.dll
+J:\Visual Studio Project\MVC Project\FishBall01\FishBall01\bin\roslyn\System.Reflection.Metadata.dll
+J:\Visual Studio Project\MVC Project\FishBall01\FishBall01\bin\roslyn\vbc.exe
+J:\Visual Studio Project\MVC Project\FishBall01\FishBall01\bin\roslyn\vbc.exe.config
+J:\Visual Studio Project\MVC Project\FishBall01\FishBall01\bin\roslyn\vbc.rsp
+J:\Visual Studio Project\MVC Project\FishBall01\FishBall01\bin\roslyn\VBCSCompiler.exe
+J:\Visual Studio Project\MVC Project\FishBall01\FishBall01\bin\roslyn\VBCSCompiler.exe.config
+J:\Visual Studio Project\MVC Project\FishBall01\FishBall01\bin\Antlr3.Runtime.dll
+J:\Visual Studio Project\MVC Project\FishBall01\FishBall01\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+J:\Visual Studio Project\MVC Project\FishBall01\FishBall01\bin\Microsoft.Web.Infrastructure.dll
+J:\Visual Studio Project\MVC Project\FishBall01\FishBall01\bin\Newtonsoft.Json.dll
+J:\Visual Studio Project\MVC Project\FishBall01\FishBall01\bin\System.Web.Helpers.dll
+J:\Visual Studio Project\MVC Project\FishBall01\FishBall01\bin\System.Web.Mvc.dll
+J:\Visual Studio Project\MVC Project\FishBall01\FishBall01\bin\System.Web.Optimization.dll
+J:\Visual Studio Project\MVC Project\FishBall01\FishBall01\bin\System.Web.Razor.dll
+J:\Visual Studio Project\MVC Project\FishBall01\FishBall01\bin\System.Web.WebPages.Deployment.dll
+J:\Visual Studio Project\MVC Project\FishBall01\FishBall01\bin\System.Web.WebPages.dll
+J:\Visual Studio Project\MVC Project\FishBall01\FishBall01\bin\System.Web.WebPages.Razor.dll
+J:\Visual Studio Project\MVC Project\FishBall01\FishBall01\bin\WebGrease.dll
+J:\Visual Studio Project\MVC Project\FishBall01\FishBall01\bin\System.Web.Helpers.xml
+J:\Visual Studio Project\MVC Project\FishBall01\FishBall01\bin\System.Web.Mvc.xml
+J:\Visual Studio Project\MVC Project\FishBall01\FishBall01\bin\System.Web.Optimization.xml
+J:\Visual Studio Project\MVC Project\FishBall01\FishBall01\bin\System.Web.Razor.xml
+J:\Visual Studio Project\MVC Project\FishBall01\FishBall01\bin\System.Web.WebPages.xml
+J:\Visual Studio Project\MVC Project\FishBall01\FishBall01\bin\System.Web.WebPages.Deployment.xml
+J:\Visual Studio Project\MVC Project\FishBall01\FishBall01\bin\System.Web.WebPages.Razor.xml
+J:\Visual Studio Project\MVC Project\FishBall01\FishBall01\bin\Newtonsoft.Json.xml
+J:\Visual Studio Project\MVC Project\FishBall01\FishBall01\bin\Antlr3.Runtime.pdb
+J:\Visual Studio Project\MVC Project\FishBall01\FishBall01\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+J:\Visual Studio Project\MVC Project\FishBall01\FishBall01\bin\zh-Hant\System.Web.Helpers.resources.dll
+J:\Visual Studio Project\MVC Project\FishBall01\FishBall01\bin\zh-Hant\System.Web.Mvc.resources.dll
+J:\Visual Studio Project\MVC Project\FishBall01\FishBall01\bin\zh-Hant\System.Web.Optimization.resources.dll
+J:\Visual Studio Project\MVC Project\FishBall01\FishBall01\bin\zh-Hant\System.Web.Razor.resources.dll
+J:\Visual Studio Project\MVC Project\FishBall01\FishBall01\bin\zh-Hant\System.Web.WebPages.resources.dll
+J:\Visual Studio Project\MVC Project\FishBall01\FishBall01\bin\zh-Hant\System.Web.WebPages.Deployment.resources.dll
+J:\Visual Studio Project\MVC Project\FishBall01\FishBall01\bin\zh-Hant\System.Web.WebPages.Razor.resources.dll
+J:\Visual Studio Project\MVC Project\FishBall01\FishBall01\obj\Debug\FishBall01.csprojAssemblyReference.cache
+J:\Visual Studio Project\MVC Project\FishBall01\FishBall01\obj\Debug\FishBall01.csproj.CoreCompileInputs.cache
+J:\Visual Studio Project\MVC Project\FishBall01\FishBall01\obj\Debug\FishBall01.csproj.CopyComplete
+J:\Visual Studio Project\MVC Project\FishBall01\FishBall01\obj\Debug\FishBall01.dll
+J:\Visual Studio Project\MVC Project\FishBall01\FishBall01\obj\Debug\FishBall01.pdb

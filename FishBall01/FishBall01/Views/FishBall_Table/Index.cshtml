@@ -1,0 +1,125 @@
+﻿@model FishBall01.ViewModels.FishBallTableViewModel
+
+@{
+    ViewBag.Title = "東港阿婆花枝丸購物網首頁";
+}
+
+
+@*using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-horizontal">
+            <h4>FishBallTableViewModel</h4>
+            <hr />
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Create" class="btn btn-default" />
+                </div>
+            </div>
+        </div>
+    }*@
+
+<div class="jumbotron">
+    <h2>東港阿婆花枝丸</h2>
+    <h6>
+        <span></span>
+        @Html.ActionLink("關於網站", "Index", new { }, new { @class = "btn btn-primary btn-lg" })
+    </h6>
+</div>
+
+<div class="row">
+    @* 如果資料庫中的成員資料表不是0個，則顯示資料，且列出新增、刪除與修改連結 *@
+    @if (!Model.DataList.Count.Equals(0))
+    {
+        foreach (var item in Model.DataList)
+        {
+            <div class="col-sm-6 col-md-4">
+                @* 解決圖片問題：要先把圖片上傳到遠端的D槽資料夾，並將資料夾URL路徑儲存到SQL，這樣讀取就是直接從URL讀取 *@
+                <img src="@item.PictureURL" width="340"/>
+                <div class="caption">
+                    <h3>@item.Name</h3>
+                    <p>價格：@item.Price</p>
+                    <p>上市日期：@DateTime.Parse(item.CreateTime.ToString()).ToLongDateString()</p>
+                    <p>
+                        <a href="#" class="btn btn-default" role="button">詳細資訊</a>
+                    </p>
+
+                </div>
+            </div>
+        }
+    }
+    else
+    {
+        <div class="col-sm-6 col-md-4">
+            <p>資料庫內無任何資料</p>
+        </div>
+
+    }
+
+
+</div>
+
+
+<!--<table class="table">-->
+    @** 如果資料庫中的成員資料表不是0個，則顯示資料，且列出新增、刪除與修改連結 *@
+    <!--if (!Model.DataList.Count.Equals(0))
+    {
+        <tr>
+            <th>產品編號</th>
+            <th>產品名稱</th>
+            <th>產品圖示</th>
+            <th>產品價格</th>
+            <th>上市日期</th>
+            <th>簡介</th>-->
+            @* 需要多一行 *@
+            <!--<th></th>
+            <th></th>
+        </tr>
+
+        foreach (var item in Model.DataList)
+        {
+            <tr>
+                <td>item.ID</td>
+                <td>item.Name</td>
+                <td><img src="item.PictureURL" width="64" /></td>
+                <td>item.Price</td>
+                <td>DateTime.Parse(item.CreateTime.ToString()).ToLongDateString()</td>
+                <td>item.Intro</td>
+
+                <td>
+                    <div class="btn btn-success" style="font-weight:bolder">
+                        Html.ActionLink("刪除資料", "Delete", new { ID = item.ID })
+                    </div>
+                </td>
+
+                <td>
+                    <div class="btn btn-danger" style="font-weight:bolder">
+                        Html.ActionLink("修改資料", "Edit", new { ID = item.ID })
+                    </div>
+                </td>
+            </tr>
+
+        }
+
+    }
+    else
+    {
+        <tr>
+            <td colspan="4">資料庫內無任何資料</td>
+        </tr>
+    }
+
+
+</table>-->
+
+
+
+<div>
+    @Html.ActionLink("返回產品列表", "Index", "FishBall_Table")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
