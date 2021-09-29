@@ -8,7 +8,7 @@
 
 <h2>產品資料表</h2>
 <div>
-    @Html.ActionLink("查詢單一產品資料", "SelectProduct", "PdiTable")
+    @Html.ActionLink("查詢單一產品資料", "SelectProduct", "PdiTable", new { @class = "btn btn-primary" })
 </div>
 
 
@@ -47,8 +47,8 @@
                 else
                 {
                     <td>
-                        @Html.ActionLink("刪除資料", "Delete", new { ProductKey = item.ProductKey })
-                        @Html.ActionLink("修改資料", "Edit", new { ProductKey = item.ProductKey })
+                        @Html.ActionLink("刪除資料", "Delete", new { ProductKey = item.ProductKey },new { @class="btn btn-danger"})
+                        @Html.ActionLink("修改資料", "Edit", new { ProductKey = item.ProductKey },new { @class = "btn btn-success" })
                     </td>
 
                 }
@@ -85,7 +85,7 @@
 
 
 <div>
-    @Html.ActionLink("返回產品列表", "Index", "PdiTable")
+    @Html.ActionLink("返回產品列表", "Index", "PdiTable", new { @class = "btn btn-primary" })
 </div>
 
 <script src="~/Scripts/jquery-3.4.1.min.js"></script>

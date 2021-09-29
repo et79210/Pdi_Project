@@ -130,13 +130,14 @@ namespace Product_Inventory0406.Services
             //取得傳入帳號的會員資料
             pdi_user LoginMember = GetDataByAccount(UserID, UserPwd);
 
-            int user_role = LoginMember.UserRank;
+            //int user_role = LoginMember.UserRank;
 
             if (LoginMember !=null) 
             {
                 //先確認帳號與密碼
                 if (LoginMember.UserID != null && LoginMember.UserPwd != null)
                 {
+
                     //要能回傳兩個訊息
                     return "";
                 }

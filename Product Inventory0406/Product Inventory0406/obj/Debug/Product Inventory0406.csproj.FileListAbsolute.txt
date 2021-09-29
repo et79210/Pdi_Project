@@ -27,14 +27,25 @@ J:\Visual Studio Project\Product Inventory0406\Product Inventory0406\bin\roslyn\
 J:\Visual Studio Project\Product Inventory0406\Product Inventory0406\bin\roslyn\vbc.rsp
 J:\Visual Studio Project\Product Inventory0406\Product Inventory0406\bin\roslyn\VBCSCompiler.exe
 J:\Visual Studio Project\Product Inventory0406\Product Inventory0406\bin\roslyn\VBCSCompiler.exe.config
+J:\Visual Studio Project\Product Inventory0406\Product Inventory0406\bin\Antlr3.Runtime.dll
 J:\Visual Studio Project\Product Inventory0406\Product Inventory0406\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 J:\Visual Studio Project\Product Inventory0406\Product Inventory0406\bin\Microsoft.Web.Infrastructure.dll
+J:\Visual Studio Project\Product Inventory0406\Product Inventory0406\bin\Newtonsoft.Json.dll
+J:\Visual Studio Project\Product Inventory0406\Product Inventory0406\bin\PagedList.dll
+J:\Visual Studio Project\Product Inventory0406\Product Inventory0406\bin\PagedList.Mvc.dll
 J:\Visual Studio Project\Product Inventory0406\Product Inventory0406\bin\System.Web.Helpers.dll
 J:\Visual Studio Project\Product Inventory0406\Product Inventory0406\bin\System.Web.Mvc.dll
+J:\Visual Studio Project\Product Inventory0406\Product Inventory0406\bin\System.Web.Optimization.dll
 J:\Visual Studio Project\Product Inventory0406\Product Inventory0406\bin\System.Web.Razor.dll
 J:\Visual Studio Project\Product Inventory0406\Product Inventory0406\bin\System.Web.Webpages.Deployment.dll
 J:\Visual Studio Project\Product Inventory0406\Product Inventory0406\bin\System.Web.Webpages.dll
 J:\Visual Studio Project\Product Inventory0406\Product Inventory0406\bin\System.Web.Webpages.Razor.dll
+J:\Visual Studio Project\Product Inventory0406\Product Inventory0406\bin\WebGrease.dll
+J:\Visual Studio Project\Product Inventory0406\Product Inventory0406\bin\Antlr3.Runtime.pdb
+J:\Visual Studio Project\Product Inventory0406\Product Inventory0406\bin\Newtonsoft.Json.xml
+J:\Visual Studio Project\Product Inventory0406\Product Inventory0406\bin\PagedList.xml
+J:\Visual Studio Project\Product Inventory0406\Product Inventory0406\bin\PagedList.Mvc.xml
+J:\Visual Studio Project\Product Inventory0406\Product Inventory0406\bin\System.Web.Optimization.xml
 J:\Visual Studio Project\Product Inventory0406\Product Inventory0406\bin\System.Web.Razor.xml
 J:\Visual Studio Project\Product Inventory0406\Product Inventory0406\bin\System.Web.Webpages.xml
 J:\Visual Studio Project\Product Inventory0406\Product Inventory0406\bin\System.Web.Webpages.Deployment.xml
@@ -42,18 +53,82 @@ J:\Visual Studio Project\Product Inventory0406\Product Inventory0406\bin\System.
 J:\Visual Studio Project\Product Inventory0406\Product Inventory0406\bin\System.Web.Helpers.xml
 J:\Visual Studio Project\Product Inventory0406\Product Inventory0406\bin\System.Web.Mvc.xml
 J:\Visual Studio Project\Product Inventory0406\Product Inventory0406\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+J:\Visual Studio Project\Product Inventory0406\Product Inventory0406\bin\zh-Hant\System.Web.Optimization.resources.dll
 J:\Visual Studio Project\Product Inventory0406\Product Inventory0406\bin\zh-Hant\System.Web.Razor.resources.dll
 J:\Visual Studio Project\Product Inventory0406\Product Inventory0406\bin\zh-Hant\System.Web.Webpages.resources.dll
 J:\Visual Studio Project\Product Inventory0406\Product Inventory0406\bin\zh-Hant\System.Web.Webpages.Deployment.resources.dll
 J:\Visual Studio Project\Product Inventory0406\Product Inventory0406\bin\zh-Hant\System.Web.Webpages.Razor.resources.dll
 J:\Visual Studio Project\Product Inventory0406\Product Inventory0406\bin\zh-Hant\System.Web.Helpers.resources.dll
 J:\Visual Studio Project\Product Inventory0406\Product Inventory0406\bin\zh-Hant\System.Web.Mvc.resources.dll
-J:\Visual Studio Project\Product Inventory0406\Product Inventory0406\obj\Debug\Product Inventory0406.csprojAssemblyReference.cache
 J:\Visual Studio Project\Product Inventory0406\Product Inventory0406\obj\Debug\Product Inventory0406.csproj.CoreCompileInputs.cache
 J:\Visual Studio Project\Product Inventory0406\Product Inventory0406\obj\Debug\Product Inventory0406.csproj.CopyComplete
 J:\Visual Studio Project\Product Inventory0406\Product Inventory0406\obj\Debug\Product Inventory0406.dll
 J:\Visual Studio Project\Product Inventory0406\Product Inventory0406\obj\Debug\Product Inventory0406.pdb
-J:\Visual Studio Project\Product Inventory0406\Product Inventory0406\bin\PagedList.dll
-J:\Visual Studio Project\Product Inventory0406\Product Inventory0406\bin\PagedList.Mvc.dll
-J:\Visual Studio Project\Product Inventory0406\Product Inventory0406\bin\PagedList.xml
-J:\Visual Studio Project\Product Inventory0406\Product Inventory0406\bin\PagedList.Mvc.xml
+J:\Visual Studio Project\Product Inventory0406\Product Inventory0406\obj\Debug\Product Inventory0406.csprojAssemblyReference.cache
+J:\Visual Studio Project\MVC Project\Product Inventory0406\Product Inventory0406\bin\Product Inventory0406.dll.config
+J:\Visual Studio Project\MVC Project\Product Inventory0406\Product Inventory0406\bin\Product Inventory0406.dll
+J:\Visual Studio Project\MVC Project\Product Inventory0406\Product Inventory0406\bin\Product Inventory0406.pdb
+J:\Visual Studio Project\MVC Project\Product Inventory0406\Product Inventory0406\bin\roslyn\csc.exe
+J:\Visual Studio Project\MVC Project\Product Inventory0406\Product Inventory0406\bin\roslyn\csc.exe.config
+J:\Visual Studio Project\MVC Project\Product Inventory0406\Product Inventory0406\bin\roslyn\csc.rsp
+J:\Visual Studio Project\MVC Project\Product Inventory0406\Product Inventory0406\bin\roslyn\csi.exe
+J:\Visual Studio Project\MVC Project\Product Inventory0406\Product Inventory0406\bin\roslyn\csi.rsp
+J:\Visual Studio Project\MVC Project\Product Inventory0406\Product Inventory0406\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+J:\Visual Studio Project\MVC Project\Product Inventory0406\Product Inventory0406\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+J:\Visual Studio Project\MVC Project\Product Inventory0406\Product Inventory0406\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+J:\Visual Studio Project\MVC Project\Product Inventory0406\Product Inventory0406\bin\roslyn\Microsoft.CodeAnalysis.dll
+J:\Visual Studio Project\MVC Project\Product Inventory0406\Product Inventory0406\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+J:\Visual Studio Project\MVC Project\Product Inventory0406\Product Inventory0406\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+J:\Visual Studio Project\MVC Project\Product Inventory0406\Product Inventory0406\bin\roslyn\Microsoft.CSharp.Core.targets
+J:\Visual Studio Project\MVC Project\Product Inventory0406\Product Inventory0406\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+J:\Visual Studio Project\MVC Project\Product Inventory0406\Product Inventory0406\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+J:\Visual Studio Project\MVC Project\Product Inventory0406\Product Inventory0406\bin\roslyn\Microsoft.VisualBasic.Core.targets
+J:\Visual Studio Project\MVC Project\Product Inventory0406\Product Inventory0406\bin\roslyn\System.AppContext.dll
+J:\Visual Studio Project\MVC Project\Product Inventory0406\Product Inventory0406\bin\roslyn\System.Collections.Immutable.dll
+J:\Visual Studio Project\MVC Project\Product Inventory0406\Product Inventory0406\bin\roslyn\System.Diagnostics.StackTrace.dll
+J:\Visual Studio Project\MVC Project\Product Inventory0406\Product Inventory0406\bin\roslyn\System.IO.FileSystem.dll
+J:\Visual Studio Project\MVC Project\Product Inventory0406\Product Inventory0406\bin\roslyn\System.IO.FileSystem.Primitives.dll
+J:\Visual Studio Project\MVC Project\Product Inventory0406\Product Inventory0406\bin\roslyn\System.Reflection.Metadata.dll
+J:\Visual Studio Project\MVC Project\Product Inventory0406\Product Inventory0406\bin\roslyn\vbc.exe
+J:\Visual Studio Project\MVC Project\Product Inventory0406\Product Inventory0406\bin\roslyn\vbc.exe.config
+J:\Visual Studio Project\MVC Project\Product Inventory0406\Product Inventory0406\bin\roslyn\vbc.rsp
+J:\Visual Studio Project\MVC Project\Product Inventory0406\Product Inventory0406\bin\roslyn\VBCSCompiler.exe
+J:\Visual Studio Project\MVC Project\Product Inventory0406\Product Inventory0406\bin\roslyn\VBCSCompiler.exe.config
+J:\Visual Studio Project\MVC Project\Product Inventory0406\Product Inventory0406\bin\Antlr3.Runtime.dll
+J:\Visual Studio Project\MVC Project\Product Inventory0406\Product Inventory0406\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+J:\Visual Studio Project\MVC Project\Product Inventory0406\Product Inventory0406\bin\Microsoft.Web.Infrastructure.dll
+J:\Visual Studio Project\MVC Project\Product Inventory0406\Product Inventory0406\bin\Newtonsoft.Json.dll
+J:\Visual Studio Project\MVC Project\Product Inventory0406\Product Inventory0406\bin\PagedList.dll
+J:\Visual Studio Project\MVC Project\Product Inventory0406\Product Inventory0406\bin\PagedList.Mvc.dll
+J:\Visual Studio Project\MVC Project\Product Inventory0406\Product Inventory0406\bin\System.Web.Helpers.dll
+J:\Visual Studio Project\MVC Project\Product Inventory0406\Product Inventory0406\bin\System.Web.Mvc.dll
+J:\Visual Studio Project\MVC Project\Product Inventory0406\Product Inventory0406\bin\System.Web.Optimization.dll
+J:\Visual Studio Project\MVC Project\Product Inventory0406\Product Inventory0406\bin\System.Web.Razor.dll
+J:\Visual Studio Project\MVC Project\Product Inventory0406\Product Inventory0406\bin\System.Web.Webpages.Deployment.dll
+J:\Visual Studio Project\MVC Project\Product Inventory0406\Product Inventory0406\bin\System.Web.Webpages.dll
+J:\Visual Studio Project\MVC Project\Product Inventory0406\Product Inventory0406\bin\System.Web.Webpages.Razor.dll
+J:\Visual Studio Project\MVC Project\Product Inventory0406\Product Inventory0406\bin\WebGrease.dll
+J:\Visual Studio Project\MVC Project\Product Inventory0406\Product Inventory0406\bin\Antlr3.Runtime.pdb
+J:\Visual Studio Project\MVC Project\Product Inventory0406\Product Inventory0406\bin\Newtonsoft.Json.xml
+J:\Visual Studio Project\MVC Project\Product Inventory0406\Product Inventory0406\bin\PagedList.xml
+J:\Visual Studio Project\MVC Project\Product Inventory0406\Product Inventory0406\bin\PagedList.Mvc.xml
+J:\Visual Studio Project\MVC Project\Product Inventory0406\Product Inventory0406\bin\System.Web.Optimization.xml
+J:\Visual Studio Project\MVC Project\Product Inventory0406\Product Inventory0406\bin\System.Web.Razor.xml
+J:\Visual Studio Project\MVC Project\Product Inventory0406\Product Inventory0406\bin\System.Web.Webpages.xml
+J:\Visual Studio Project\MVC Project\Product Inventory0406\Product Inventory0406\bin\System.Web.Webpages.Deployment.xml
+J:\Visual Studio Project\MVC Project\Product Inventory0406\Product Inventory0406\bin\System.Web.Webpages.Razor.xml
+J:\Visual Studio Project\MVC Project\Product Inventory0406\Product Inventory0406\bin\System.Web.Helpers.xml
+J:\Visual Studio Project\MVC Project\Product Inventory0406\Product Inventory0406\bin\System.Web.Mvc.xml
+J:\Visual Studio Project\MVC Project\Product Inventory0406\Product Inventory0406\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+J:\Visual Studio Project\MVC Project\Product Inventory0406\Product Inventory0406\bin\zh-Hant\System.Web.Optimization.resources.dll
+J:\Visual Studio Project\MVC Project\Product Inventory0406\Product Inventory0406\bin\zh-Hant\System.Web.Razor.resources.dll
+J:\Visual Studio Project\MVC Project\Product Inventory0406\Product Inventory0406\bin\zh-Hant\System.Web.Webpages.resources.dll
+J:\Visual Studio Project\MVC Project\Product Inventory0406\Product Inventory0406\bin\zh-Hant\System.Web.Webpages.Deployment.resources.dll
+J:\Visual Studio Project\MVC Project\Product Inventory0406\Product Inventory0406\bin\zh-Hant\System.Web.Webpages.Razor.resources.dll
+J:\Visual Studio Project\MVC Project\Product Inventory0406\Product Inventory0406\bin\zh-Hant\System.Web.Helpers.resources.dll
+J:\Visual Studio Project\MVC Project\Product Inventory0406\Product Inventory0406\bin\zh-Hant\System.Web.Mvc.resources.dll
+J:\Visual Studio Project\MVC Project\Product Inventory0406\Product Inventory0406\obj\Debug\Product Inventory0406.csprojAssemblyReference.cache
+J:\Visual Studio Project\MVC Project\Product Inventory0406\Product Inventory0406\obj\Debug\Product Inventory0406.csproj.CoreCompileInputs.cache
+J:\Visual Studio Project\MVC Project\Product Inventory0406\Product Inventory0406\obj\Debug\Product Inventory0406.csproj.CopyComplete
+J:\Visual Studio Project\MVC Project\Product Inventory0406\Product Inventory0406\obj\Debug\Product Inventory0406.dll
+J:\Visual Studio Project\MVC Project\Product Inventory0406\Product Inventory0406\obj\Debug\Product Inventory0406.pdb
